@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MyAndroidLayouts</string>
+    <string name="buhome">Home from strings</string>
+    <string name="mgs">Welcome</string>
+    <string-array name="myarray">
+        <item>name</item>
+        <item>name</item>
+        <item>name</item>
+    </string-array>
 </resources>

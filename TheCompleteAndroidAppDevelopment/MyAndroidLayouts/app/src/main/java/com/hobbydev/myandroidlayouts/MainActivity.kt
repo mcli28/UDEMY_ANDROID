@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.MenuInflater
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
@@ -11,11 +12,15 @@ import android.widget.SearchView
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var buHome: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+        initComponents()
+        initUI()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -42,6 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle item selection.
         return when (item.itemId) {
@@ -60,4 +66,14 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
+    private fun initComponents(){
+        buHome = findViewById(R.id.buHome)
+    }
+    private fun initUI(){
+        buHome.text = getString(R.string.buhome)
+        //String[] myarray = getString(R.array.myarray)
+    }
+
+
 }

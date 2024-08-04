@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">localization</string>
+    <string name="buhome">Domicile</string>
+    <string name="mgs">Bienvenue</string>
+    <string-array name="myarray">
+        <item>name</item>
+        <item>name</item>
+        <item>name</item>
+    </string-array>
+</resources>
